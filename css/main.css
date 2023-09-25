@@ -9,7 +9,8 @@
     display: flex;
    background-color: burlywood;
     text-align: center;
-    height:100px;    
+    height:100px;  
+    
 }
 
 
@@ -70,6 +71,21 @@
 }
 .background-pic img {
     width: 100%;
+}
+
+.logo-pic {
+    display: flex;
+    justify-content: center;
+    margin-top:-40% ;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-size: 90px;
+    font-family: 'Fuggles', cursive;
+    color:burlywood;
+    font-weight: 600;
+    margin-bottom: 34%;
+
 }
 
 body{
@@ -328,6 +344,7 @@ footer{
 }
 .image-contianer{
     text-align: center;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -379,3 +396,31 @@ footer{
     background-color: burlywood;
 
 }
+body{
+    width: 100%;
+}
+.reservation-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+.form-container{
+    background-color: burlywood;
+    padding: 30px;
+    
+}
+#entry{
+    width: 250px;
+    height: 30px;
+}
+.image-contianer-reserve {
+    width: auto;
+    max-width:600px;
+}
+
+.image-contianer-reserve img{
+    width: 100%;
+}
+
