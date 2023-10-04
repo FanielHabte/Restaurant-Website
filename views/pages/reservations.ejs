@@ -6,54 +6,189 @@
 
 
 
-    <body>
-        <div class="reservation-container">
+<body>
 
-            <div class="form-container">
 
-                <form method="get" action="" class="main-form">
-                
-                    <div class="customer-flex">
-                        <div>
-                            <label for="FirstName">First Name</label> <br>
-                            <input type="text" name="FirstName" id="entry" placeholder="First Name" required autofocus>
-                        </div>
-                
-                        <div>
-                            <label for="LastName">Last Name</label> <br>
-                            <input type="text" name="LastName" id="entry" placeholder="Last Name" required>
-                        </div>
-                
-                        <div>
-                            <label for="Email">Email </label> <br>
-                            <input type="email" name="Email" id="entry" placeholder="Email" required>
-                        </div>
-                
-                        <div>
-                            <label for="Party Size">Party Size</label> <br>
-                            <input type="text" name="Party Size" id="entry" placeholder="Party Size" required>
-                        </div>
-                    </div>
-                
-                    <Div>
-                        <label for="Commnets">Addtional Info</label><br>
-                        <textarea name="Commnets" id="Commnets" placeholder="Addtional Info" cols="35" rows="5"></textarea>
-                    </Div>
-                
-                    <div>
-                        <input type="submit">
-                    </div>
-                </form>
+    <div class="reservation-container">
+
+
+        <div class="firstPage-container">
+            <div class="gTc-container">
+                <div class="guest-number">
+                    <label for="guest-number">Guest Number</label><br>
+                    <select name="guest-number" id="guest-number">
+                        <option value=""> choose number of guests</option>
+                        <option value=""> 1 person</option>
+                        <option value="">2 person </option>
+                        <option value=""> 3 person </option>
+                        <option value=""> 4 person</option>
+                        <option value=""> 5 person </option>
+                        <option value="">6 person</option>
+                        <option value="">7 person</option>
+                        <option value="">8 person</option>
+                        <option value="">9 person</option>
+                        <option value="">10 person</option>
+                        <option value=""> More</option>
+        
+        
+                    </select>
+        
+                </div>
+        
+                <div class="calander">
+                    <label for="calander">Calander </label><br>
+                    <input type="text">
+        
+                </div>
+                <div class="time">
+                    <label for="time">Time </label><br>
+                    <input type="text">
+        
+                </div>
+        
+        
             </div>
+        
+            <div class="available-time">
+        
+                <li> 10:00 </li>
+                <li> 11:00 </li>
+                <li> 12:00 </li>
+                <li> 1:00 </li>
+                <li> 2:00 </li>
+                <li> 3:00 </li>
+                <li> 4:00 </li>
+                <li> 5:00 </li>
+                <li> 6:00 </li>
+                <li> 7:00 </li>
+                <li> 8:00 </li>
+                <li> 9:00 </li>
+                <li> 10:00 </li>
+            </div>
+        
+            <div class="reserved-time">
+                <h1> Reserved Time</h1>
+                <ul>
+        
+                </ul>
+            </div>
+        
+            <div class="btn-container">
+                <button class="next-btn"> Next </button>
+        
+            </div>
+        </div>
+        
+        <div class="secondPage-container">
+        
+            <div class="resrv-adress">
+                <h2> Punt Restaurant </h2>
+                <h3> 16003 Admirality Way Lynnwood WA</h3>
+                <div class="party_number">
+                    <h3> Party Number </h3>
+                </div>
+                <div class="today-date">
+                    <h3> Today </h3>
+                </div>
+            </div>
+        
+            <h2> Guest Info </h2>
+            <div class="customer-flex">
+                <div class="firstname">
+                    <label for="FirstName">First Name</label> <br>
+                    <input type="text" name="FirstName" id="entry" placeholder="First Name" required autofocus>
+                </div>
+        
+                <div class="lastname">
+                    <label for="LastName">Last Name</label> <br>
+                    <input type="text" name="LastName" id="entry" placeholder="Last Name" required autofocus>
+                </div>
+            </div>
+        
+            <div class="resrv-email">
+                <label for="Email">Email</label> <br>
+                <input type="email" name="Email" id="entry1" placeholder="Email" required>
+            </div>
+        
+            <div class="resrv-PHnumber">
+                <label for="PhoneNumber">Phone Number</label> <br>
+                <input type="tel" name="Phone" id="entry1" placeholder="Phone" required>
+            </div>
+        
+            <div class="btn-container">
+                <button type="submit" class=" Rerv-btn"> Complete reservation </button>
+            </div>
+        
+        </div>
+    
+    </div>
+    
 
-            
-             <div class="image-contianer-reserve">
-                <img src="/images/reserved.jpg" alt="">
-             </div>
+    <div class="container-container">
 
+        <div class="calander-container">
+            <div class="nav-calander">
+                <div class="arrowMonth-container">
+        
+                    <div class="prev-calander">
+                        <i class="fa-solid fa-less-than"></i>
+                    </div>
+                    <div class="month-nav">
+                        <h3 class="current-month"> Month </h3>
+                    </div>
+        
+        
+                    <div class="next-calander">
+                        <i class="fa-solid fa-greater-than"></i>
+                    </div>
+        
+                </div>
+        
+                <div class="d-m-y">
+                    <li class="date">Friday</li>
+                    <li class="month"> Jan </li>
+                    <li class="date-number"> 6 </li>
+                    <li class="year">2023</li>
+                    
+                </div>
+            </div>
+            <div class="day">
+                <li> Sun</li>
+                <li> Mon</li>
+                <li> Tue</li>
+                <li> Wed</li>
+                <li> Thu</li>
+                <li> Fri</li>
+                <li> Sat</li>
+                
+            </div>
+            <div class="dates-calander">
+               
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- <div class="reservationFrame-container">
+
+        <div class="reservations">
+
+            <iframe src="https://tableagent.com/iframe/faniel-habte/"
+                sandbox="allow-forms allow-modals allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                width="100%" height="100%" id="reservation-frame">
+            </iframe>
 
         </div>
-    </body>
+
+        <div class="images">
+            <img src="/images/reserved.jpg" alt="picture of reservation">
+        </div>
+
+    </div> -->
+
+</body>
+
 
 
     <%- include('../partials/footer') %>
