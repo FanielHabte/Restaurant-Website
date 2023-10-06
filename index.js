@@ -1,18 +1,16 @@
-
-
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 8080; 
+const port = process.env.PORT || 8080;
 
-app.listen(port, () => {
-
-
+// Set the view engine to EJS
 app.set("view engine", "ejs");
 
+// Serve static files from the current directory
 app.use(express.static(__dirname));
 
-app.get('/index', (req, res) => {
-  res.render("pages/index");
+// Define your routes
+app.get('/', (req, res) => {
+  res.render("pages/");
 });
 
 app.get('/menu', (req, res) => {
@@ -20,7 +18,7 @@ app.get('/menu', (req, res) => {
 });
 
 app.get('/news', (req, res) => {
-  res.render("pages/news" );
+  res.render("pages/news");
 });
 
 app.get('/locations', (req, res) => {
@@ -30,15 +28,8 @@ app.get('/locations', (req, res) => {
 app.get('/reservations', (req, res) => {
   res.render("pages/reservations");
 });
-})
 
-// app.listen(2000, () => {
-// //   console.log("Server is running on port 2000");
-// });
-
-
-
-
-
-
-
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
