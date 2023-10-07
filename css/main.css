@@ -896,6 +896,7 @@ body{
         border: solid #582817 2px;
         font-family: 'Courier New', Courier, monospace;
         font-weight: 600;
+        background-color: #fff;
         color: #582817;
         margin-top: 20px;
     }
@@ -955,8 +956,8 @@ body{
         font-size: 20px;
         font-family: 'Courier New', Courier, monospace;
         font-weight: 600;
-        background-color: white;
-        color: #582817;
+        background-color:#582817 ;
+        color: white;
         margin-top: 25px;
     }
 
