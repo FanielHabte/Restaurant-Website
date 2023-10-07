@@ -274,7 +274,7 @@ footer{
     margin-top: 15px;
     list-style:none;
 }
-.contact-phone{
+.contact-phone p {
     color:black;
 }
 .contact-us h2 {
