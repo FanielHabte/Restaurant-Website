@@ -828,7 +828,7 @@ body{
     }
     .drop-links li a{
         color: burlywood;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 600;
     }
 
@@ -836,12 +836,14 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 15px;
         margin-left: 10px;
         gap: 60px;
-        font-size: 35px;
+        font-size: 80px;
     }
-
+.drop-socials .fa-brands.fa-facebook-f,.drop-socials .fa-brands.fa-instagram,.drop-socials .fa-brands.fa-yelp {
+    font-size: 40px;
+}
     .logo {
         margin-top: auto;
         margin-bottom: 0;
