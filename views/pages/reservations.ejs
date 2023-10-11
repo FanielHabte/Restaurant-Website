@@ -8,144 +8,95 @@
 
 <body>
     <form action="" method="get">
-
         <div class="reservation-container">
-
-            <div class="secondPage-container">
-
-                <div class="resrv-adress">
-                    <h2> Punt Restaurant </h2>
-                    <h3> 16003 Admirality Way Lynnwood WA</h3>
-                    <div class="party_number">
-                    <h3> Party Number </h3>
+            
+                <div class="secondPage-container">
+                    <div class="resrv-adress">
+                        <h2> Punt Restaurant </h2>
+                        <h3> 16003 Admirality Way Lynnwood WA</h3>
                     </div>
-                    <div class="today-date">
-                    <h3> Today </h3>
+
+                    <h2> Guest Info </h2>
+                    <div class="customer-flex">
+                        <div class="firstname">
+                            <label for="FirstName">First Name</label> <br>
+                            <input type="text" name="First Name" id="entry" placeholder=" First Name" required autofocus>
+                        </div>
+                        <div class="lastname">
+                            <label for="LastName">Last Name</label> <br>
+                            <input type="text" name="Last Name" id="entry" placeholder=" Last Name" required autofocus>
+                        </div>
+                    </div>
+                    <div class="resrv-email">
+                        <label for="Email">Email</label> <br>
+                        <input type="email" name="Email" id="entry1" placeholder=" Email" required>
+                    </div>
+                    <div class="resrv-PHnumber">
+                        <label for="PhoneNumber">Phone Number</label> <br>
+                        <input type="tel" name="Phone" id="entry1" placeholder=" Phone" required>
+                    </div>
+                    <div class="firstPage-container" >
+                        <div class="gTc-container" >
+                            <div class="guest-number">
+                                <label for="guest-number">Guest Number</label><br>
+                                <select name="Party Size" id="guest-number">
+                                    <option> choose number of guests</option>
+                                    <option value="Party of 1"> 1 person</option>
+                                    <option value="Party of 2">2 person </option>
+                                    <option value="Party of 3"> 3 person </option>
+                                    <option value="Party of 4"> 4 person</option>
+                                    <option value="Party of 5"> 5 person </option>
+                                    <option value="Party of 6">6 person</option>
+                                    <option value="Party of 7">7 person</option>
+                                    <option value="Party of 8">8 person</option>
+                                    <option value="Party of 9">9 person</option>
+                                    <option value="Party of 10">10 person</option>
+                                    <option value="Big party"> More </option>
+                                </select>
+                            </div>
+                            <div class="calander">
+                                <label for="calander">Calander </label><br>
+                                <select name= "Date" id="calander-choose"> 
+                                    <option value=""> Choose date</option>
+                                </select>
+                                <div class="reserved-calander"> </div>
+                            </div>
+                            <div class="timee">
+                                <label for="time">Time </label><br>
+                                <select name="Time" id="" class="available-time">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="btn-container">
+                        <button type="submit" class=" Rerv-btn"> Complete reservation </button>
+                    </div>
+                </div>
+
+
+            <div class="reserved-time">
+                <div class="reserv-header">
+                    <h1> Reserved Time</h1>
+                    <h2> Your details</h2>
+                </div>
+
+                <ul>
+                    <div class="showreservedtime">
+
                     </div>
                     
+                </ul>
+                <div class="button-contianer">
+                    <button class="confirm"> Comfirm Reservation </button>
                 </div>
-
-                <h2> Guest Info </h2>
-
-                <div class="customer-flex">
-                    <div class="firstname">
-                        <label for="FirstName">First Name</label> <br>
-                        <input type="text" name="First Name" id="entry" placeholder=" First Name" required autofocus>
-                    </div>
-
-                    <div class="lastname">
-                        <label for="LastName">Last Name</label> <br>
-                        <input type="text" name="Last Name" id="entry" placeholder=" Last Name" required autofocus>
-                    </div>
-                </div>
-
-                <div class="resrv-email">
-                    <label for="Email">Email</label> <br>
-                    <input type="email" name="Email" id="entry1" placeholder=" Email" required>
-                </div>
-
-                <div class="resrv-PHnumber">
-                    <label for="PhoneNumber">Phone Number</label> <br>
-                    <input type="tel" name="Phone" id="entry1" placeholder=" Phone" required>
-                </div>
-
-                <div class="firstPage-container" >
-
-
-                    <div class="gTc-container" >
-                        <div class="guest-number">
-                            <label for="guest-number">Guest Number</label><br>
-                            <select name="partSize" id="guest-number">
-                                <option value=""> choose number of guests</option>
-                                <option value=""> 1 person</option>
-                                <option value="">2 person </option>
-                                <option value=""> 3 person </option>
-                                <option value=""> 4 person</option>
-                                <option value=""> 5 person </option>
-                                <option value="">6 person</option>
-                                <option value="">7 person</option>
-                                <option value="">8 person</option>
-                                <option value="">9 person</option>
-                                <option value="">10 person</option>
-                                <option value=""> More</option>
-                            </select>
-                        </div>
-                        
-                        <div class="calander">
-                            <label for="calander">Calander </label><br>
-                            <input type="text" id="calander-choose">
-                            <div class="reserved-calander"> </div>
-                        </div>
-
-                        <div class="timee">
-                            <label for="time">Time </label><br>
-                            <select name="time" id="" class="available-time">
-                            </select>
-                        </div>
-                    </div>
-
-
-                    <div class="reserved-time">
-                        <h1> Reserved Time</h1>
-                        <ul>
-                            <div class="showreservedtime">
-
-                            </div>
-                        </ul>
-                    </div>
-
-
-
-                </div>
-
-                <div class="btn-container">
-                    <button type="submit" class=" Rerv-btn"> Complete reservation </button>
-                </div>
-
-            </div> 
-        </div>
-        
-
-        <div class="container-container">
-            <div class="calander-container">
-                <div class="nav-calander">
-                    <div class="arrowMonth-container">
-                        <div class="prev-calander">
-                            <i class="fa-solid fa-less-than" id="prev-year"></i>
-                        </div>
-
-                        <div class="month-nav">
-                            <h3 class="current-month"> Month </h3>
-                        </div>
-
-                        <div class="next-calander">
-                            <i class="fa-solid fa-greater-than" id="next-year"></i>
-                        </div>
-                    </div>
-                    <div class="d-m-y">
-                        <li class="datestring">Friday</li>
-                        <!-- <li class="month"> Jan </li> -->
-                    </div>
-                </div>
-
-                <div class="day">
-                    <li> Sun</li>
-                    <li> Mon</li>
-                    <li> Tue</li>
-                    <li> Wed</li>
-                    <li> Thu</li>
-                    <li> Fri</li>
-                    <li> Sat</li> 
-                </div>
-
-                <div class="dates-calander">
-
-                </div>
+                
+                
             </div>
-        </div>
+            
+        </div>    
     </form>
 </body>
 
-
-
-    <%- include('../partials/footer') %>
+ <%- include('../partials/footer') %>
